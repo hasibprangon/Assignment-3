@@ -20,7 +20,9 @@
           extend: {
             colors: {
               clifford: '#da373d',
+              paraColor: 'rgb(73, 73, 73)',
               btnColor: '#ABEF5F',
+              btnBgColor: 'rgba(171, 239, 95, 0.5)',
             }
           }
         }
@@ -34,6 +36,7 @@
 <body class="manrope-font">
     <!-- header section -->
     <header class="container mx-auto">
+      <!-- nav section -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -104,6 +107,16 @@
               <i class="fa-solid fa-bars lg:hidden"></i>
             </div>
           </div>
+
+          <!-- banner -->
+           <section class="container max-auto">
+            <img class="mx-auto" src="./assets/banner.png" alt="">
+            <div class="text-center mt-6">
+              <h1 class="lg:text-6xl text-3xl font-extrabold">A barn house of this design has a<br>striking appearance</h1>
+              <p class="lg:text-base text-sm font-medium mt-6  text-[paraColor]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <button class="btn bg-btnBgColor rounded-3xl font-extrabold mt-8 lg:w-52 text-xl w-full">View Details <i class="bg-btnColor  p-2 rounded-full -rotate-45 fa-solid fa-arrow-right"></i></button>
+            </div>
+           </section>
     </header>
 </body>
 
