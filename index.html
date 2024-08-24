@@ -20,6 +20,10 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            customColor1: 'rgb(231, 193, 211)',
+            customColor2: 'rgb(239, 218, 110)',
+            customColor3: 'rgb(164, 218, 195)',
+            customColor4: 'rgb(119, 170, 234)',
             paraColor: 'rgb(73, 73, 73)',
             btnColor: '#ABEF5F',
             btnBgColor: 'rgba(171, 239, 95, 0.5)',
@@ -117,11 +121,11 @@
       <!-- hero -->
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col-reverse lg:flex-row-reverse mt-6">
-          <img src="./assets/Rectangle.png"
-            class=" rounded-lg shadow-2xl flex-1 h-[460px]" />
-            <!-- about content -->
+          <img src="./assets/Rectangle.png" class=" rounded-lg shadow-2xl flex-1 h-[460px]" />
+          <!-- about content -->
           <div class="flex-1 text-center lg:text-start">
-            <button class="btn rounded-3xl text-base font-bold bg-white mb-4"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+            <button class="btn rounded-3xl text-base font-bold bg-white mb-4"><i class="fa-solid fa-arrow-right"></i>
+              About Us</button>
             <h1 class="text-5xl font-bold lg:w-[559.97px]">We design thoughtful, liveable spaces</h1>
             <p class="py-6 text-base lg:w-[559.97px]">
               The barn house captivates with its blend of rustic charm and
@@ -145,6 +149,43 @@
 
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- work process section -->
+    <section class="container mx-auto bg-base-200 p-10">
+      <!-- description -->
+      <div class="text-center mb-8">
+        <button class="btn text-base font-bold bg-white rounded-3xl p-3 mb-4"><i class="fa-solid fa-arrow-right"></i> How we works</button>
+        <h1 class="text-4xl font-bold mb-6">Our Works Process</h1>
+        <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <!-- works cards -->
+      <div class="flex flex-col lg:flex-row items-center lg:justify-center space-y-6	lg:space-x-6">
+        <div class="bg-customColor1 w-[270px] p-5 rounded-xl mt-6">
+          <img class="mb-2" src="./assets/concept.png" alt="">
+          <h3 class="text-xl font-extrabold mb-2.5">Concept</h3>
+          <p class="text-sm font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
+        <div class="bg-customColor2 w-[270px] p-5 rounded-xl">
+          <img class="mb-2" src="./assets/flow-chart.png" alt="">
+          <h3 class="text-xl font-extrabold mb-2.5">Design Process</h3>
+          <p class="text-sm font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
+        <div class="bg-customColor3 w-[270px] p-5 rounded-xl">
+          <img class="mb-2" src="./assets/vision.png" alt="">
+          <h3 class="text-xl font-extrabold mb-2.5">Supervision</h3>
+          <p class="text-sm font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
+        <div class="bg-customColor4 w-[270px] p-5 rounded-xl">
+          <img src="./assets/budget-planning.png" class="mb-2" alt="">
+          <h3 class="text-xl font-extrabold mb-2.5">Budget Planning</h3>
+          <p class="text-sm font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+
       </div>
     </section>
   </main>
