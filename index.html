@@ -25,6 +25,9 @@
             customColor3: 'rgb(164, 218, 195)',
             customColor4: 'rgb(119, 170, 234)',
             paraColor: 'rgb(73, 73, 73)',
+            footerParaColor: 'rgb(115, 115, 115)',
+            footerNavColor: 'rgb(233, 233, 233)',
+            footerBg: 'rgb(28, 28, 28)',
             btnColor: '#ABEF5F',
             btnBgColor: 'rgba(171, 239, 95, 0.5)',
           }
@@ -189,6 +192,26 @@
       </div>
     </section>
   </main>
+
+  <!-- footer section -->
+  <footer class="footer footer-center  bg-footerBg text-base-content rounded p-10">
+    <div class="flex">
+      <i class="fa-solid fa-arrow-right -rotate-45 bg-btnColor p-2 rounded-3xl"></i>
+      <a class="text-3xl font-extrabold text-white">Rinterio</a>
+    </div>
+    <p class="text-base font-medium text-footerParaColor">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+    <nav class="grid lg:grid-flow-col lg:gap-28 gap-8 text-footerNavColor">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Service</a>
+      <a class="link link-hover">Portfolio</a>
+      <a class="link link-hover">Blogs</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <div class="flex">
+      <button class="btn bg-btnColor rounded-3xl font-extrabold mt-8 lg:w-52 text-xl w-full">Book Consult<i
+        class="bg-black text-white p-2 rounded-full -rotate-45 fa-solid fa-arrow-right"></i></button>
+    </div>
+  </footer>
 </body>
 
 </html>
