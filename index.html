@@ -49,18 +49,11 @@
     <!-- nav section -->
     <div class="navbar bg-base-100">
       <div class="navbar-start">
-        <div class="dropdown">
-          <button tabindex="0" class="btn bg-btnColor rounded-full mr-3">
-            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+        <!-- <div class="dropdown"> -->
+          <button tabindex="0" class=" bg-btnColor rounded-full mr-3">
+            <i class="fa-solid fa-arrow-right -rotate-45 p-2"></i>
           </button>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a class="font-bold">Home</a></li>
-            <li><a>Service</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
-        </div>
+        <!-- </div> -->
         <a class="text-3xl font-extrabold">Rinterio</a>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -99,7 +92,19 @@
             class="bg-black text-white p-2 rounded-full -rotate-45 fa-solid fa-arrow-right"></i></button>
 
         <!-- menu bar -->
-        <i class="fa-solid fa-bars lg:hidden"></i>
+        <div class="dropdown dropdown-left lg:hidden">
+          <button tabindex="0" class="btn bg-btnColor rounded-full mr-3">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a class="font-bold">Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        
       </div>
     </div>
 
@@ -119,17 +124,17 @@
 
   <!-- main -->
   <main>
-    <!-- about us section -->
-    <section class="container mx-auto mt-28">
+     <!-- about us section -->
+     <section class="container mx-auto mt-28">
       <div class="relative hidden lg:block">
-        <img class="absolute top-3 left-3 border-2 border-dashed border-gray-500 p-5" src="./assets/Vector.png" alt="">
+        <img class="absolute top-3 left-3 z-10 border-2 border-dashed border-gray-500 p-5" src="./assets/Vector.png" alt="">
       </div>
       <!-- hero -->
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col-reverse lg:flex-row-reverse mt-6">
           <img src="./assets/Rectangle.png" class=" rounded-lg shadow-2xl flex-1 h-[460px]" />
           <!-- about content -->
-          <div class="flex-1 text-center lg:text-start">
+          <div class="flex-1 text-center lg:text-start z-0">
             <button class="btn rounded-3xl text-base font-bold bg-white mb-4"><i class="fa-solid fa-arrow-right"></i>
               About Us</button>
             <h1 class="text-5xl font-bold lg:w-[559.97px]">We design thoughtful, liveable spaces</h1>
