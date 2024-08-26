@@ -30,6 +30,8 @@
             footerBg: 'rgb(28, 28, 28)',
             btnColor: '#ABEF5F',
             btnBgColor: 'rgba(171, 239, 95, 0.5)',
+            portfolioBtn: 'rgba(171, 239, 95, 0.2)',
+            portfolioBg: 'rgba(233, 233, 233, 0.5)',
             inputTextColor: 'rgb(160, 160, 160)',
           }
         }
@@ -195,9 +197,66 @@
       </div>
     </section>
 
+    <!-- portfolio section -->
+    <section class="container mx-auto mt-24">
+      <div class="text-center mb-8">
+        <button class="bg-portfolioBtn rounded-3xl p-3 text-base font-bold mb-4"><i
+            class="fa-solid fa-arrow-right mr-3"></i>Explore our Latest works</button>
+        <h1 class="text-4xl font-bold mb-6">Our Latest Portfolio</h1>
+        <p class="text-base font-medium text-paraColor">The barn house captivates with its blend of rustic charm and
+          modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <!-- portfolio cards -->
+      <div>
+        <!-- card 1 -->
+        <div class="flex flex-col lg:flex-row items-center lg:space-x-4 space-y-3 lg:p-5 p-8">
+          <!-- element1 -->
+          <div class="flex lg:flex-1 flex-col lg:flex-row bg-portfolioBg p-4 lg:p-8 justify-center items-center lg:mt-2 rounded-lg">
+            <img class="mr-5 h-[179.3px]" src="./assets/img1.png" alt="">
+            <div class="mx-auto mt-4">
+              <h3 class="text-2xl font-extrabold mb-4">Commercial</h3>
+              <p class="text-sm font-medium mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <button class="text-xl font-extrabold ">View Details <i class="fa-solid fa-arrow-right bg-btnColor p-1 rounded-3xl -rotate-45"></i></button>
+            </div>
+          </div>
+          <!-- element2 -->
+           <div class="bg-portfolioBg p-4 lg:p-8 rounded-lg ">
+            <img class="w-full" src="./assets/img2.png" alt="">
+           </div>
+           <!-- element3 -->
+            <div class="bg-portfolioBg p-4 lg:p-8 rounded-lg w-full lg:hidden">
+              <img class="w-full" src="./assets/img5.png" alt="">
+            </div>
+        </div>
+
+        <!-- card 2 -->
+         <div class="flex flex-col lg:flex-row items-center lg:space-x-4 space-y-3 lg:p-5 p-8">
+          <!-- element1 -->
+           <div class="order-2 lg:order-1 bg-portfolioBg lg:mt-2 p-4 lg:p-8 rounded-lg lg:w-[295px] w-full mt-2">
+            <img class="w-full" src="./assets/img3.png" alt="">
+           </div>
+           <!-- element2 -->
+            <div class="order-1 flex lg:flex-1 flex-col lg:flex-row bg-portfolioBg p-4 lg:p-7 justify-center items-center lg:mt-2 rounded-lg">
+              <img class="mr-5 h-[179.3px]" src="./assets/img4.png" alt="">
+              <div class="mx-auto mt-4">
+                  <h3 class="text-2xl font-extrabold mb-4">Commercial</h3>
+                  <p class="text-sm font-medium mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                  <button class="text-xl font-extrabold ">View Details <i class="fa-solid fa-arrow-right bg-btnColor p-1 rounded-3xl -rotate-45"></i></button>
+              </div>
+            </div>
+            <!-- element3 -->
+             <div class="order-3 bg-portfolioBg p-4 lg:p-8 rounded-lg lg:w-[295px] w-full">
+              <img class="w-full" src="./assets/img5.png" alt="">
+             </div>
+
+         </div>
+      </div>
+    </section>
+
     <!-- discus section -->
     <section class="container mx-auto pt-1">
-      <div class="bg-no-repeat bg-cover bg-center min-h-screen mb-6 p-8" style="background-image: url('./assets/bg.jpg');">
+      <div class="bg-no-repeat bg-cover bg-center min-h-screen mb-6 p-8"
+        style="background-image: url('./assets/bg.jpg');">
         <div class="text-center lg:pt-24 mb-8">
           <button class="bg-btnBgColor p-2 rounded-2xl mb-4"><i class="fa-solid fa-arrow-right mr-1"></i>Let's
             connect</button>
@@ -211,27 +270,33 @@
             <!-- first name -->
             <div class="relative">
               <label for="firstName" class="absolute top-0 left-0 px-2 py-1 text-inputTextColor  rounded-xl"></label>
-              <input type="text" id="firstName" placeholder="First Name*" class="block w-full px-4 py-2  rounded-xl" required>
+              <input type="text" id="firstName" placeholder="First Name*" class="block w-full px-4 py-2  rounded-xl"
+                required>
             </div>
             <!-- last name -->
             <div class="relative">
               <label for="lastName" class="absolute top-0 left-0 px-2 py-1 text-inputTextColor  rounded-xl"></label>
-              <input type="text" id="lastName" placeholder="Last Name*" class="block w-full px-4 py-2  rounded-xl" required>
+              <input type="text" id="lastName" placeholder="Last Name*" class="block w-full px-4 py-2  rounded-xl"
+                required>
             </div>
             <!-- phone number -->
             <div class="relative">
               <label for="phoneNumber" class="absolute top-0 left-0 px-2 py-1 text-inputTextColor   rounded-xl"></label>
-              <input type="text" id="phoneNumber" placeholder="Phone Number*" class="block w-full px-4 py-2  rounded-xl" required>
+              <input type="text" id="phoneNumber" placeholder="Phone Number*" class="block w-full px-4 py-2  rounded-xl"
+                required>
             </div>
             <!-- Email -->
             <div class="relative">
               <label for="email" class="absolute top-0 left-0 px-2 py-1 text-inputTextColor   rounded-xl"></label>
-              <input type="email" id="email" placeholder="Email Number*" class="block w-full px-4 py-2 rounded-xl" required>
+              <input type="email" id="email" placeholder="Email Number*" class="block w-full px-4 py-2 rounded-xl"
+                required>
             </div>
           </div>
           <!-- message -->
-          <textarea id="message" class="block w-full px-4 py-2 rounded-xl mt-4"  placeholder="Write your message here*"></textarea>
-          <button class="text-xl font-extrabold bg-btnColor w-full rounded-xl mt-8 p-1"> Send Mail<i class="fa-solid fa-arrow-right bg-black text-white ml-2 p-0.5 rounded-3xl -rotate-45"></i></button>
+          <textarea id="message" class="block w-full px-4 py-2 rounded-xl mt-4"
+            placeholder="Write your message here*"></textarea>
+          <button class="text-xl font-extrabold bg-btnColor w-full rounded-xl mt-8 p-1"> Send Mail<i
+              class="fa-solid fa-arrow-right bg-black text-white ml-2 p-0.5 rounded-3xl -rotate-45"></i></button>
         </form>
       </div>
     </section>
